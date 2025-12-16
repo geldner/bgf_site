@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addressing Bivariate Design Storms - The Barbara Geldner Foundation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">The Barbara Geldner Foundation</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle active">Focus Areas and Strategic Objectives ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="flood-risk.html" class="active">Flood Risk Analysis</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Bivariate Design Storms Don't Work</h1>
+            <p class="subtitle">Theoretical and empirical reasons why this increasingly prevalent method is simply incorrect</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="container">
+                <p class="breadcrumb"><a href="flood-risk.html">← Back to Flood Risk Analysis</a></p>
+
+                <h2>Overview</h2>
+                <p>The use of bivariate design storms is seeing significant uptake in flood risk analysis for planning by state and municipal actors (Kim et al., 2023; Santos et al., 2021; Jane et al., 2020; Bender et al., 2016). There are three problems with this:</p>
+
+                <ol class="problems-list">
+                    <li>
+                        <strong>Erroneous Mathematical Formulation:</strong> Elements of the original mathematical formulation of this problem are incorrect on the level of 2+2=5, particularly the "outer envelope" of bivariate AEP isoquants from distinct processes being used as a "conservative" estimate of corresponding isoquants of the mixed process.
+                    </li>
+                    <li>
+                        <strong>Misleading Exceedance Probabilities:</strong> The core concept utilized by these approaches, the very notion of a bivariate exceedance probability, does not do what it says on the tin and is actively misleading with respect to the exceedance probability of interest, that of flood severity or depth. Most common formulations lead to design events corresponding to the N-year return period that deterministically produce less flooding than the N-year flood depth under the method's core assumptions.
+                    </li>
+                    <li>
+                        <strong>Limited Explanatory Power:</strong> Even were these issues resolved, it is likely that the variability (variance) in flood depth response that can be captured by a bivariate model is small compared to the residual variability attributable to unmodelled flood drivers at extreme return periods, rendering them largely unhelpful in understanding flood risk.
+                    </li>
+                </ol>
+
+                <h2>Pending Documentation</h2>
+                <p>Pending documentation will illustrate accessible and intuitive mathematical proof of the first two points, and examine the third with a stylized case study utilizing an uncalibrated SFINCS model made freely available by Deltares, with a bivariate copula model constructed using spatially explicit AORC rainfall data and USGS gage data. These results will then be demonstrated with a user-friendly Jupyter notebook, with open source and readily reproducible workflow. Below is a conference poster presented at the 2025 meeting of the American Geophysics Union.</p>
+
+                <div class="pdf-container" style="margin: 2rem 0;">
+                    <object data="Bivariate_poster-6_cmyk.pdf" type="application/pdf" width="100%" height="800px">
+                        <p>Your browser does not support embedded PDFs. <a href="Bivariate_poster-6_cmyk.pdf">Download the poster (PDF)</a> to view it.</p>
+                    </object>
+                </div>
+
+                <h2>References</h2>
+                <ul class="references-list">
+                    <li>Bender, J., Wahl, T., Müller, A., & Jensen, J. (2016). A multivariate design framework for river confluences. <em>Hydrological Sciences Journal, 61</em>(3), 471-482.</li>
+                    <li>Jane, R., Cadavid, L., Obeysekera, J., & Wahl, T. (2020). Multivariate statistical modelling of the drivers of compound flood events in south Florida. <em>Natural Hazards and Earth System Sciences, 20</em>(10), 2681-2699.</li>
+                    <li>Kim, H., Villarini, G., Jane, R., Wahl, T., Misra, S., & Michalek, A. (2023). On the generation of high-resolution probabilistic design events capturing the joint occurrence of rainfall and storm surge in coastal basins. <em>International Journal of Climatology, 43</em>(2), 761-771.</li>
+                    <li>Santos, V. M., Wahl, T., Jane, R., Misra, S. K., & White, K. D. (2021). Assessing compound flooding potential with multivariate statistical models in a complex estuarine system under data constraints. <em>Journal of Flood Risk Management, 14</em>(4), e12749.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 The Barbara Geldner Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

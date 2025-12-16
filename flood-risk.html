@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Risk Analysis - The Barbara Geldner Foundation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">The Barbara Geldner Foundation</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle active">Focus Areas and Strategic Objectives ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="flood-risk.html" class="active">Flood Risk Analysis</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Flood Risk Analysis</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="container">
+                <h2>Addressing Critical Gaps in Flood Risk Assessment</h2>
+                <p>There is a hidden crisis in the field of flood risk management. The science is simply not mature enough for us to accurately understand flood risk. Corporate data-vendors are selling flood risk estimates while refusing to disclose their uncertainty. Other actors are selling data to states and municipalities for planning purposes generated in ways that are simply mathematically incorrect. Well-intentioned analysts are structurally pushed towards releasing modeling results that they know are inadequate; mostly their jobs are to bill hours and re-do their last analysis in a new location. It is currently nobody’s job to make sure that the models being used actually work.</p>
+                <p>It is widely known that FEMA floodmaps are outdated both in content and methodology (through no fault of FEMA staff themselves – they have neither the funding nor the congressional mandate to properly characterize flood risk across the United States). Corporate data-vendors claim to provide a solution, but refuse to disclose uncertainty information---violating established standards of practice in applied statistics---and hide from scientific scrutiny with closed-source modeling practices. From the information they do disclose, it is clear that they systematically ignore critical flood drivers from consideration, and assume that flood outcomes are uniquely determined by a single variable measuring rainfall or streamflow severity. The truth is that storms which cause flooding are more than a single number---for a given storm, rainfall varies in time and space and streamflow rises to a peak before declining. Models typically assume an average soil moisture condition, when oftentimes the worst floods occur when the soil has already been saturated by a recent storm. Modeling flood risk with a single scalar variable and treating everything else as constant systematically underestimates the variability of flooding and therefore underestimates the severity of the worst and most impactful floods.</p>
+                <p>Naturally, these univariate models can’t resolve flood risk from river flows and rainfall at the same time (flood risk from multiple flood hazards is called “compound flood risk”). That’s a problem, because a lot of places have both rivers and rain. Scientists and engineers are aware of this problem, but have not managed to fully resolve it. Current methods in compound flood risk analysis are not mature enough for safety-critical applications in flood resilience planning or infrastructure design. While recent work has mostly figured out how to handle compound flood risk from hurricanes (with major caveats [TODO link to page]). But as far as we can tell, for compound flood risk which isn’t related to hurricanes, nobody has come up a method that works.</p>
+                <p>Some organizations sell methods which simply don’t work. A notable example is the use of "<a href="bivariate-design-storms.html">bivariate design storms</a>". First proposed in 2016, this method is based on wildly incorrect mathematics. But the objectively incorrect mathematics are only part of the problem. Another part of the problem is that while accounting for two variables is marginally better than just one, it’s still a gross oversimplification of complex dynamics, and treating variable flood drivers as constant. The last part of the problem is that they typically don’t even actually model flood risk---planners think they’re looking at a map of flood depths or extents what will occur or be exceeded with x% annual probability, but what they’re actually looking at is a mathematical abstraction that’s wildly different but made to sound similar---one that will always underestimate flood risk unless we get lucky with the severe random errors from the bivariate model.</p>
+                <p>We’re here to fix it. We’re here to document the failures of prevalent approaches. We’re here to hold people accountable for the data they sell---data that parents are using to figure out if their kids are in danger, data that planners and decision-makers are using to protect their communities, data that is guaranteed to cause severe harm when it’s presented as more certain and more reliable than it really is.</p>
+                <p>We're here to advocate for transparency. We're here to support research to resolve gaps in existing methods when corporate vendors and unscrupulous actors pretend that they aren't there. We're here to work with and support scientists with integrity and advance the state of practice of flood risk analysis---to protect communities from catastrophe, to protect families from having their homes washed away, and ultimately to save lives.</p>
+
+                <h3>Current Initiatives</h3>
+                <ul class="initiatives-list">
+                    <li><a href="corporate-vendors-univariate.html">Addressing Corporate Vendors and Univariate Flood Hazard</a></li>
+                    <li><a href="bivariate-design-storms.html">Addressing Bivariate Design Storms - they don't work</a></li>
+                    <li><a href="tropical-storm-compound-flood.html">Strengths and Weaknesses in Tropical Storm-driven Compound Flood Risk Modeling</a></li>
+                </ul>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 The Barbara Geldner Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

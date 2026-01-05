@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precipitation Downscaling - The Barbara Geldner Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">The Barbara Geldner Project</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle active">Focus Areas and Strategic Objectives ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="flood-risk.html">Flood Risk Analysis</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Persistent Issues in Statistical Precipitation Downscaling from Climate Models</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="container">
+                <p class="breadcrumb">
+                    <a href="flood-risk.html">Flood Risk Analysis</a> / Precipitation Downscaling
+                </p>
+
+                <h2>The Core Problem</h2>
+                <p>Climate models operate at spatial and temporal scales too coarse to resolve discrete precipitation events. They typically express precipitation in monthly terms. Using these values directly and treating rainfall as a constant drizzle over the course of a month will inevitably underestimate the flood impacts of discrete rainfall events. In order to statistically downscale these values, analysis typically take historical precipitation data and scale it up or down so that monthly values match. More sophisticated approaches exist, but they generally share the common feature of assuming that the temporal structure of rainfall events is stationary in time. Alternative methods exist in which physically driven deterministic simulations attempt to resolve smaller-scale behavior using large-scale climate model results as boundary conditions, but this is computationally intensive and risks conflating numerical error with aleatory uncertainty. Computer vision approaches and generative models have been applied, but these lack interpretability. There as of yet is no consensus solution.</p>
+                <p>In practice, flood risk analysts typically use statistical downscaling methods which are based solely on large-scale changes in rainfall volume, and fail to meaningfully account for changes in storm frequency, intensity, and temporal structure that are likely to result from climate change. Resulting projections of flood risk are treated as predictive in planning contexts, leading to overly confident estimates of flood risk and insufficiently robust planning as a result.</p>
+                <p>We expect that statistical downscaling methods can be improved upon by use of a structural statistical model parameterizing frequency, rainfall totals, and parameters governing the distribution of event structure including rainfall peakedness, which would then be used to generate individual rainfall events for simulation and statistical ggregation.</p>
+                <p>Future documentation will more thoroughly review existing methods, empirically characterize the harms associated with overly confident flood risk projections using common approaches as opposed to those which better characterize uncertainty, and make a more detailed proposal for improved methods in statistical downscaling.</p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 The Barbara Geldner Project. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
